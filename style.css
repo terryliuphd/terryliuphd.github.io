@@ -42,6 +42,11 @@ a{
 	background-color: #5580a1;
 }
 
+img.medium {
+	width: 241px;
+	height: 426px;
+}
+
 input:focus, textarea:focus {
     background: #eee;
 }
