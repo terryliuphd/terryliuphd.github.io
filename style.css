@@ -1,3 +1,64 @@
+/* CSS reset ------------------------------------ */
+
+
+/* Whole Website -------------------------------- */
+*, *:before, *.after {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a{
+	    text-decoration: none;
+	    color: #B72400;
+}
+
+/* Navigation Bar ------------------------------- */
+
+nav{
+	display: block;
+	position: fixed;
+	float: left;
+	left: 5%;
+	width: 100%;
+	margin-bottom: 30px;
+	font: 14pt;
+	clear: both;
+	font-weight: bold;
+}   
+
+nav ul{
+	margin: 0;
+	list-style: none;
+}
+
+nav li a{
+    display: inline-block;
+   	/*position: relative;*/
+	/*float: left;*/
+	padding: 5px;
+	background: #aaa;
+	width: 12em;
+}
+
+nav a:link{
+	color: yellow;
+}
+
+nav a:visited{
+	color: white;
+}
+
+nav a:active{
+	color: red;
+}
+
+nav a:hover{
+	    text-decoration: none;
+	    color: black;
+}
+
+/* Main content - common part ------------------- */
 
 body {
 	/*background: white url("pics/background.gif") no-repeat top right;*/
@@ -5,18 +66,9 @@ body {
 	font-size: 14px;
 	color: black;
 	background-color: #cad5d9;
-	
 	margin: 20px 20%;
 	padding: 0;
 }
-
-/* This is a comment, by the way */
-
-a{
-	    text-decoration: none;
-	    color: #B72400;
-}
-
 
 .linkstyle-1 a:link{
 	color: yellow;
@@ -42,9 +94,18 @@ a{
 	background-color: #5580a1;
 }
 
-img.medium {
+#photo {
 	width: 241px;
 	height: 426px;
+	border-width: 2px;
+	border-color: #ccc;
+	float: left;
+}
+
+li {
+	/*display: inline;*/
+	color: normal;
+	font-style: normal;
 }
 
 input:focus, textarea:focus {
@@ -52,17 +113,10 @@ input:focus, textarea:focus {
 }
 
 p {
-	
 	font: 14px/1 "Times New Roman", times, serif;
-	/*padding: 30px 10px;
-	border: 1px black solid;
-	border-width: 1px 5px 5px 1px;
-	border-color: red green blue yellow;
-	margin: 10px 50px;*/
 }
 
 p:first-letter {
-
     font-size: 150%;
     /*float: left;*/
 }
@@ -72,27 +126,11 @@ p:first-line {
     font-weight: bold;
 }
 
-/*
-p:first-child{
-	font-weight: bold;
-	font-size: 40px;
-}
-*/
 h1 {
 	color: #5580a1;
 	font-size: 2em;
 	font-style: italic;
 	text-align: center;
-	/*
-	letter-spacing: 0.3em;
-	background-color: #aab9be;
-	padding: 4px;
-	margin: 0;
-	margin-bottom: 7px;
-	border-bottom-style: solid;
-	border-bottom-width: 0.5em;
-	border-bottom-color: #7299a7;
-	/**/
 }
 
 h2 {
@@ -114,15 +152,13 @@ h4 {
 	font-size: 1.1em;
 }
 
+/* Intro Section -------------------------------- */
+
+/* This is a comment, by the way */
 
 figure {
 	float: left;
 	text-align: center;
-}
-#photo {
-	border-width: 2px;
-	border-color: #ccc;
-	float: left;
 }
 
 .author{
@@ -151,74 +187,17 @@ figure {
 	font-style: bold;
 }
 
-li {
-	/*display: inline;*/
-	color: normal;
-	font-style: normal;
+address ul{
+	vertical-align: bottom;
+	font-size: 1.3em;
 }
 
+/* Others --------------------------------------- */
+/* Navigation Bar ------------------------------- */
 
 table {
 	background-color: #ddd;
 	caption-side: bottom;
-}
-
-
-.nav{
-	display: block;
-	float: left;
-	width: 100%;
-	margin-bottom: 30px;
-	font: 14pt;
-	clear: both;
-	/*background: #eee;
-	/**/
-}         
-.nav ul{
-	margin: 0;
-	padding: 0;
-}
-
-.nav li{
-	position: relative;
-	float: left;
-	color: black;
-	background: #cad5d9;
-	list-style: none;
-	/**/
-	width: 150px;
-    display: inline-block;
-}
-
-.toggle {
-    display: none;
-}
-
-.nav a{
-	font-weight: bold;
-	background: #aaa;
-	text-align: center;
-	width: 130px;
-    display: inline-block;
-	padding: 5px 10px;
-}
-
-.nav a:link{
-	color: yellow;
-}
-
-.nav a:visited{
-	color: white;
-}
-
-.nav a:active{
-	color: red;
-}
-
-.nav a:hover{
-	    text-decoration: none;
-	    color: black;
-	    /*background-color: white;*/
 }
 
 section {
@@ -234,23 +213,6 @@ blockquote:after {
     content: close-quote;
 }
 
-
-#back {
-	position: fixed;
-	background: gray;
-	left: 10%;
-	padding: 30px 10px;
-	border: 1px black solid;
-	border-width: 0px 5px 5px 0px;
-	border-color: #eee;
-	margin: 10px 50px;
-	/**/
-	color: white;
-	font-weight: bold;
-	text-align: center;
-	text-transform: uppercase;
-}
-
 aside{
 	text-align: right;
 }
@@ -258,11 +220,3 @@ aside{
 .alternative {
 	color: white;
 }
-
-/*
-#main_nav, #related_links { 
-	visibility: hidden;
-}
-/*display: none }*/
-
-
