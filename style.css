@@ -15,48 +15,6 @@ a{
 
 /* Navigation Bar ------------------------------- */
 
-nav{
-	display: block;
-	position: fixed;
-	float: left;
-	left: 5%;
-	width: 100%;
-	margin-bottom: 30px;
-	font: 14pt;
-	clear: both;
-	font-weight: bold;
-}   
-
-nav ul{
-	margin: 0;
-	list-style: none;
-}
-
-nav li a{
-    display: inline-block;
-   	/*position: relative;*/
-	/*float: left;*/
-	padding: 5px;
-	background: #aaa;
-	width: 12em;
-}
-
-nav a:link{
-	color: yellow;
-}
-
-nav a:visited{
-	color: white;
-}
-
-nav a:active{
-	color: red;
-}
-
-nav a:hover{
-	    text-decoration: none;
-	    color: black;
-}
 
 /* Main content - common part ------------------- */
 
